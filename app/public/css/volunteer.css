@@ -1,0 +1,65 @@
+label {
+  padding: 5px 12px 12px 0;
+  display: inline-block;
+}
+
+.container input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 12px;
+
+}
+
+input[type=number], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=number]:focus {
+  background-color: lightgreen;
+}
+input[type=text]:focus {
+  background-color: lightgreen;
+}
+input[type=email]:focus {
+  background-color: lightgreen;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  padding-bottom: 60px;
+
+
+}
+.submitbutton{
+  text-align: center;
+}
+
+

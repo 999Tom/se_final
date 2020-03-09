@@ -1,0 +1,111 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>payment page</title> <!-- 网页标题 -->
+
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>   <!-- 饮用jquery包  百度CDN-->
+    <script src="js/paymentpage.js"></script>									<!-- 引用外部的js文件 -->
+
+	<link href="css/paymentpage.css" rel="stylesheet">							<!-- 引用相对路径 导入样式表的URL -->
+</head>
+
+</style>
+<body>
+<center>          																<!-- 文本居中对齐 -->
+	  <h2 class="h2_one_class">Make a Donation</h2>								<!-- 以h2大小设置标题：Make a Donation 类名称为h2 one class -->
+	  <h4>I want to make a one-off donation of...</h4>							<!-- h4设置标题 -->
+</center>
+<br>																			<!-- 换行 -->
+<div class="content_1">															<!-- 包括四个付款选项 使用div 分隔区块-->
+
+				<div class="square_1 square_1_1">								<!-- xxxxxxx第一个15磅 -->
+					    <div class="height_1"></div>
+						<span class="price price_1">£15</span>
+						<hr class="hr_class">
+						<p class="desc desc_1">will pay for a music therapy session for children and their parents.</p>
+				</div>
+
+				<div class="square_1 square_1_2">
+							<div class="height_1"></div>
+							<span class="price price_2">£25</span>
+							<hr class="hr_class">
+							<p class="desc desc_2">will pay for a tree planted at the hospice [EXAMPLE].</p>
+				</div>
+
+				<div class="square_1 square_1_3">
+					    <div class="height_1"></div>
+						<span class="price price_3">£50</span>
+						<hr class="hr_class">
+						<p class="desc desc_3">will pay for a petting zoo session [EXAMPLE].</p>
+				</div>
+
+				<div class="square_1 square_1_4">
+						<div class="height_1"></div>
+						<span class="price price_4">£<input id="custom__amount" name="custom__amount" type="text"></span>
+						<hr class="hr_class">
+						<p class="desc desc_4">other amount, please note, a minimum donation of £2.</p>
+				</div>
+
+</div>
+
+<center>
+		 <button class="button_class">Prefer to Give Regularly</button>					<!-- 中间蓝色按钮 -->
+
+</center>
+
+	<div class="div_hr">																<!-- xxxxx中间那条线 -->
+		<hr class="hr_class_1">
+
+
+	</div>
+	<div class="content_2">																<!-- 填写个人信息 -->
+			<span class="span_title">Your details</span>
+			<br>
+			<br>
+			<span>Title: *</span>
+			<br>
+			<br>
+			<select class="select_1">														<!-- 选项 -->
+				<option value="">---Select A Title ---</option>
+				<option value="Mr">Mr</option>
+				<option value="Miss">Miss</option>
+				<option value="Mrs">Mrs</option>
+				<option value="Master">Master</option>
+				<option value="Dr">Dr</option>
+				<option value="Ms">Ms</option>
+				<option value="Sir">Sir</option>
+				<option value="Lady">Lady</option>
+				<option value="Rev">Rev</option>
+				<option value="Fr">Fr</option>
+			</select>
+			<br>
+			<br>
+			<div class="name">
+					<div class="name_left">
+						<span>First Name: *</span>
+						<br>
+						<br>
+						<input class="name_input_left" type="" name="">
+					</div>
+
+
+					<div class="name_right">
+						<span>Surname: *</span>
+						<br>
+						<br>
+						<input  class="name_input_right" type="" name="">
+					</div>
+			</div>
+
+
+	</div>
+
+
+
+
+	<div style="height:100px;clear: both"></div>
+</body>
+</html>

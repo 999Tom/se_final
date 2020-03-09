@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title> Volunteer Form </title>
+  </head>
+  <body>
+    <form name = "addtext">
+      <div class="personalInfo">
+        <div class="title">
+          <label for="title"> Title: </label>
+          <label for="Mr"> Mr </label>
+          <input type="radio" name="title" id="Mr" value="Mr">
+          <label for="Mr"> Mrs </label>
+          <input type="radio" name="title" id="Mrs" value="Mrs">
+          <label for="Mr"> Miss </label>
+          <input type="radio" name="title" id="Miss" value="Miss">
+          <label for="Mr"> Ms </label>
+          <input type="radio" name="title" id="Ms" value="Ms">
+          <label for="Mr"> Dr </label>
+          <input type="radio" name="title" id="Dr" value="Dr">
+        </div>
+
+        <div class="Name">
+          <label for="name"> Name </label>
+          <input type="text" name="name" id="name" placeholder="First Name Last Name" required>
+        </div>
+
+        <div class="address">
+          <label for="address"> Address </label>
+          <input type="text" name="address" id="address" placeholder="Park House Road, Durham" required>
+        </div>
+
+        <div class="post">
+          <label for="post"> Post Code </label>
+          <input type="text" name="post" id="post" placeholder="DH1 3QF" required>
+        </div>
+
+        <div clas="mobnumber">
+          <label for="mobnumber"> Mobile Number </label>
+          <input type="number" name="mobnumber" id="mobnumber" required>
+        </div>
+
+        <div clas="homenumber">
+          <label for="homenumber"> Home Number </label>
+          <input type="number" name="homenumber" id="homenumber" required>
+        </div>
+
+        <div class="email">
+          <label for="email"> Email </label>
+          <input type="email" name="email" id="email" placeholder="yourEmail@gmail.com" required>
+        </div>
+
+        <div>
+          <label for="age"> Age </label>
+          <input type="number" name="age" id="age" min="1" max="120" step="1">
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="emergencyContact">
+        <div class="EmergName">
+          <label for="Emergname"> Name </label>
+          <input type="text" name="Emergname" id="Emergname" placeholder="First Name Last Name" required>
+        </div>
+
+        <div class="Relationship">
+          <label for="Relationship"> Relationship </label>
+          <input type="text" name="Relationship" id="Relationship" placeholder="Relationship" required>
+        </div>
+
+        <div clas="Emergmobnumber">
+          <label for="Emergmobnumber"> Mobile Number </label>
+          <input type="number" name="Emergmobnumber" id="Emergmobnumber" required>
+        </div>
+
+        <div clas="Emerghomenumber">
+          <label for="Emerghomenumber"> Home Number </label>
+          <input type="number" name="Emerghomenumber" id="Emerghomenumber" required>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="Devskills">
+          <label for="Devskills"> Skills you like to develop by volunteering with the hosipice</label>
+          <br>
+          <textarea id="Devskills" name="Devskills"> </textarea>
+        </div>
+        <div class="experience">
+          <label for="experience"> Current/ Previous Employment/ experience</label>
+          <br>
+          <textarea id="experience" name="experience"></textarea>
+        </div>
+        <div class="why">
+          <label for="why"> Why would you like to Volunteer at St Cuthbert's Hosipice </label>
+          <br>
+          <textarea id="why" name="why"></textarea>
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <div class="interest">
+        Select your interest below.
+        <br>
+        Note that:
+        <br>
+        options with * requires the volunteer to be over 16 years of Age
+        <br>
+        options with # may require previous training or experience
+        <div class="Admin">
+          <label for="Admin">Admin/ Reception</label>
+          <input type="checkbox" name="Admin" id="Admin" value ="admin">
+        </div>
+        <div class="Gardening">
+          <label for="Gardening">Gardening</label>
+          <input type="checkbox" name="Gardening" id="Gardening" value ="gardening">
+        </div>
+        <div class="Inpatient">
+          <label for="Inpatient">In-Patient Unit*</label>
+          <input type="checkbox" name="Inpatient" id="Inpatient" value ="inpatient">
+        </div>
+        <div class="Retail">
+          <label for="Retail">Retail Assistants for Charity Shops</label>
+          <input type="checkbox" name="Retail" id="Retail" value="Retail">
+        </div>
+        <div class="LivingCentre">
+          <label for="LivingCentre">Living Well Centre*</label>
+          <input type="checkbox" name="LivingCentre" id="LivingCentre" value="livingCentre">
+        </div>
+        <div class="Maintenance">
+          <label for="Maintenance">Maintenance/ DIY</label>
+          <input type="checkbox" name="MaintenanceDIY" id="MaintenanceDIY" value="maintenanceDIY">
+        </div>
+        <div class="Development">
+          <label for="Maintenance">Maintenance/ Fundraising</label>
+          <input type="checkbox" name="MaintenanceF" id="MaintenanceF" value="maintenance">
+        </div>
+        <div class="Beauty">
+          <label for="Beauty">Beauty Therapy/ Hairdressing #</label>
+          <input type="checkbox" name="Beauty" id="Beauty" value="beauty">
+        </div>
+        <div class="relations">
+          <label for="relations">Public Relations</label>
+          <input type="checkbox" name="relations" id="relations" value="relations">
+        </div>
+        <div class="PDriver">
+          <label for="Driver">Patient Driver/ Escort*</label>
+          <input type="checkbox" name="Driver" id="Driver" value="driver">
+        </div>
+        <div class="Coffee">
+          <label for="Coffee">Coffee Shop</label>
+          <input type="checkbox" name="Coffee" id="Coffee" value="coffee">
+        </div>
+        <div class="Kitchen">
+          <label for="Kitchen">Kitchen Assistant</label>
+          <input type="checkbox" name="Kitchen" id="Kitchen" value="kitchen">
+        </div>
+        <div class="Therapy">
+          <label for="Therapy">Complementary Therapies</label>
+          <input type="checkbox" name="Therapy" id="Therapy" value="therapy">
+        </div>
+        <div class="Housekeeping">
+          <label for="Housekeeping">Housekeeping/ Laundry</label>
+          <input type="checkbox" name="Housekeeping" id="Housekeeping" value="housekeeping">
+        </div>
+        <div class="RDriver">
+          <label for="RDriver">Retail Driver - Collections/ Delivery</label>
+          <input type="checkbox" name="RDriver" id="RDriver" value="rdriver">
+        </div>
+        <div class="Counselling">
+          <label for="Counselling">Counselling #</label>
+          <input type="checkbox" name="Counselling" id="Counselling" value="conunselling">
+        </div>
+        <div class="OneOff">
+          <label for="OneOff">One off Events</label>
+          <input type="checkbox" name="OneOff" id="OneOff" value="oneoff">
+        </div>
+        <br>
+        <br>
+      </div>
+
+      <div class="How">
+        Please indicate where you heard about volunteering with us:
+        <div class="web">
+          <label for="web">Hosipice Website</label>
+          <input type="checkbox" name="web" id="web" value="web">
+        </div>
+        <div class="Publication">
+          <label for="Publication">Hosipice Publication</label>
+          <input type="checkbox" name="Publication" id="Publication" value="publication">
+        </div>
+        <div class="Mouth">
+          <label for="Mouth">Word of Mouth</label>
+          <input type="checkbox" name="Mouth" id="Mouth" value="mouth">
+        </div>
+        <div class="School">
+          <label for="School">School/College/University</label>
+          <input type="checkbox" name="School" id="School" value="school">
+        </div>
+        <div class="Event">
+          <label for="Event">Hosipice Event</label>
+          <input type="checkbox" name="Event" id="Event" value="event">
+        </div>
+        <div class="VolunteerCentre">
+          <label for="VolunteerCentre">Volunteer Centre</label>
+          <input type="checkbox" name="VolunteerCentre" id="VolunteerCentre" value="volunteerCentre">
+        </div>
+        <div class="CharityShop">
+          <label for="CharityShop">Charity Shop</label>
+          <input type="checkbox" name="CharityShop" id="CharityShop" value="charityShop">
+        </div>
+        <div class="ExternalPublication">
+          <label for="ExternalPublication">External Publication</label>
+          <input type="checkbox" name="ExternalPublication" id="ExternalPublication" value="exetrnalPublication">
+        </div>
+        <div class="Connection">
+          <label for="Connection">Personal Connection</label>
+          <input type="checkbox" name="Connection" id="Connection" value="connection">
+        </div>
+      </div>
+      <div class="Availablity">
+        Check the Follwing Boxes for your availablity
+        <br>
+        Monday
+        <div class="MMorning">
+          <label for="MMorning">Morning</label>
+          <input type="checkbox" name="MMorning" id="MMorning" value="MMorning">
+        </div>
+        <div class="MAfternoon">
+          <label for="MAfternoon">Afternoon</label>
+          <input type="checkbox" name="MAfternoon" id="MAfternoon" value="MAfternoon">
+        </div>
+        <div class="MEvening">
+          <label for="MEvening">Evening</label>
+          <input type="checkbox" name="MEvening" id="MEvening" value="MEvening">
+        </div>
+        <br>
+        Tuesday
+        <div class="TuMorning">
+          <label for="TuMorning">Morning</label>
+          <input type="checkbox" name="TuMorning" id="TuMorning" value="TuMorning">
+        </div>
+        <div class="TuAfternoon">
+          <label for="TuAfternoon">Afternoon</label>
+          <input type="checkbox" name="TuAfternoon" id="TuAfternoon" value="TuAfternoon">
+        </div>
+        <div class="TuEvening">
+          <label for="TuEvening">Evening</label>
+          <input type="checkbox" name="TuEvening" id="TuEvening" value="TuEvening">
+        </div>
+        <br>
+        Wednesday
+        <div class="WMorning">
+          <label for="WMorning">Morning</label>
+          <input type="checkbox" name="WMorning" id="WMorning" value="WMorning">
+        </div>
+        <div class="WAfternoon">
+          <label for="WAfternoon">Afternoon</label>
+          <input type="checkbox" name="WAfternoon" id="WAfternoon" value="WAfternoon">
+        </div>
+        <div class="WEvening">
+          <label for="WEvening">Evening</label>
+          <input type="checkbox" name="WEvening" id="WEvening" value="WEvening">
+        </div>
+        <br>
+        Thursday
+        <div class="ThMorning">
+          <label for="ThMorning">Morning</label>
+          <input type="checkbox" name="ThMorning" id="ThMorning" value="ThMorning">
+        </div>
+        <div class="ThAfternoon">
+          <label for="ThAfternoon">Afternoon</label>
+          <input type="checkbox" name="ThAfternoon" id="ThAfternoon" value="ThAfternoon">
+        </div>
+        <div class="ThEvening">
+          <label for="ThEvening">Evening</label>
+          <input type="checkbox" name="ThEvening" id="ThEvening" value="ThEvening">
+        </div>
+        <br>
+        Friday
+        <div class="FMorning">
+          <label for="FMorning">Morning</label>
+          <input type="checkbox" name="FMorning" id="FMorning" value="FMorning">
+        </div>
+        <div class="FAfternoon">
+          <label for="FAfternoon">Afternoon</label>
+          <input type="checkbox" name="FAfternoon" id="FAfternoon" value="FAfternoon">
+        </div>
+        <div class="FEvening">
+          <label for="FEvening">Evening</label>
+          <input type="checkbox" name="FEvening" id="FEvening" value="FEvening">
+        </div>
+        <br>
+        Saturday
+        <div class="SatMorning">
+          <label for="SatMorning">Morning</label>
+          <input type="checkbox" name="SatMorning" id="SatMorning" value="SatMorning">
+        </div>
+        <div class="SatAfternoon">
+          <label for="SatAfternoon">Afternoon</label>
+          <input type="checkbox" name="SatAfternoon" id="SatAfternoon" value="SatAfternoon">
+        </div>
+        <div class="SatEvening">
+          <label for="SatEvening">Evening</label>
+          <input type="checkbox" name="SatEvening" id="SatEvening" value="SatEvening">
+        </div>
+        <br>
+        Sunday
+        <div class="SunMorning">
+          <label for="SunMorning">Morning</label>
+          <input type="checkbox" name="SunMorning" id="SunMorning" value="SunMorning">
+        </div>
+        <div class="SunAfternoon">
+          <label for="SunAfternoon">Afternoon</label>
+          <input type="checkbox" name="SunAfternoon" id="SunAfternoon" value="SunAfternoon">
+        </div>
+        <div class="SunEvening">
+          <label for="SunEvening">Evening</label>
+          <input type="checkbox" name="SunEvening" id="SunEvening" value="SunEvening">
+        </div>
+        How often would you like to volunteer?
+        <br>
+        <input type="text" name="volunteerOften" id="volunteerOften" placeholder="once a week">
+        <br>
+        If your availablity is limited, please indicate below:
+        <br>
+        <input type="text" name="Vollimits" placeholder="Term time only, VISA etc">
+      </div>
+
+      <br>
+      <div class="Referees">
+        provide the details of 2 people who have known you for at least 2 years in a professional capacity
+        <div class="ref1">
+          Referee 1:
+          <div class="ref1name">
+            <label for="ref1name"> Name </label>
+            <input type="text" name="ref1name" id="ref1name" placeholder="First Name Last Name" required>
+          </div>
+          <div class="ref1Relationship">
+            <label for="ref1Relationship"> Relationship </label>
+            <input type="text" name="ref1Relationship" id="ref1Relationship" placeholder="Relationship" required>
+          </div>
+          <div clas="ref1number">
+            <label for="ref1number"> Mobile Number </label>
+            <input type="number" name="ref1number" id="ref1number" required>
+          </div>
+          <div class="ref1email">
+            <label for="ref1email"> Email </label>
+            <input type="email" name="ref1email" id="ref1email" placeholder="yourEmail@gmail.com" required>
+          </div>
+          <div class="ref1post">
+            <label for="ref1post"> Post Code </label>
+            <input type="text" name="ref1post" id="ref1post" placeholder="DH1 3QF" required>
+          </div>
+          <div class="ref1address">
+            <label for="ref1address"> Address </label>
+            <input type="text" name="ref1address" id="ref1address" placeholder="Park House Road, Durham" required>
+          </div>
+        </div>
+        <br>
+
+        <div class="ref2">
+          Referee 2:
+          <div class="ref2name">
+            <label for="ref2name"> Name </label>
+            <input type="text" name="ref2name" id="ref2name" placeholder="First Name Last Name" required>
+          </div>
+          <div class="ref2Relationship">
+            <label for="ref2Relationship"> Relationship </label>
+            <input type="text" name="ref2Relationship" id="ref2Relationship" placeholder="Relationship" required>
+          </div>
+          <div clas="ref2number">
+            <label for="ref2number"> Mobile Number </label>
+            <input type="number" name="ref2number" id="ref2number" required>
+          </div>
+          <div class="ref2email">
+            <label for="ref2email"> Email </label>
+            <input type="email" name="ref2email" id="ref2email" placeholder="yourEmail@gmail.com" required>
+          </div>
+          <div class="ref2post">
+            <label for="ref2post"> Post Code </label>
+            <input type="text" name="ref2post" id="ref2post" placeholder="DH1 3QF" required>
+          </div>
+          <div class="ref2address">
+            <label for="ref2address"> Address </label>
+            <input type="text" name="ref2address" id="ref2address" placeholder="Park House Road, Durham" required>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <input type="submit" value="submit" />
+    </form>
+        <script type="text/javascript" src='form.js'></script>
+  </body>
+</html>

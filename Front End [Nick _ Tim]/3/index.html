@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>St.Cuthbert's Hospice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/paymentpage.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>  <!--needed for font and search icon-->
+    <meta charset="utf-8" />
+    <title>Donations</title>
+    <meta name="description" content="A demo of Stripe Payment Intents" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="/donations.js" defer></script>
+	<link href="css/paymentpage.css" rel="stylesheet">
+</head>
+
+</style>
+<body>
+
+    <header> <!--Navigation bar-->
+      <div class="logo">  <!--SCH logo-->
+        <img src="../logo.jpg">
+      </div>
+      <div class="Nav_Bar">
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">What We Do</a></li>
+          <li><a href="#">Get Involved</a></li>
+          <li><a href="#">Hospice Life</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li>
+            <div class = "search-box">
+              <input class="search-txt" type="text" name="" placeholder="Type to Search">
+              <a class="search-btn" href="#">
+                <i class= "fas fa-search"></i>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+
+<center>
+	  <h2 class="h2_one_class">Make a Donation</h2>
+	  <h4>I want to make a one-off donation of...</h4>
+</center>
+<br>
+<div class="content_1">
+	
+
+				<div class="square_1 square_1_1">
+					    <div class="height_1"></div>
+						<span class="price price_1">£15</span>
+						<hr class="hr_class">
+						<p class="desc desc_1">will pay for a music therapy session for children and their parents.</p>
+				</div>
+
+				<div class="square_1 square_1_2">
+							<div class="height_1"></div>
+							<span class="price price_2">£25</span>
+							<hr class="hr_class">
+							<p class="desc desc_2">will pay for half an hour of bereavement support to someone who has lost a loved one.</p>
+				</div>
+
+				<div class="square_1 square_1_3">
+					    <div class="height_1"></div>
+						<span class="price price_3">£50</span>
+						<hr class="hr_class">
+						<p class="desc desc_3">will pay for an hour of bereavement support to relatives and friends.</p>
+				</div>
+
+				<div class="square_1 square_1_4">
+						<div class="height_1"></div>
+						<span class="price price_4">£<input id="custom__amount" name="custom__amount" type="text"></span>
+						<hr class="hr_class">
+						<p class="desc desc_4">other amount, please note, a minimum donation of £2.</p>
+				</div>
+			
+</div>	
+
+<center>
+		 <button class="button_class">Prefer to Give Regularly</button>
+		
+</center>
+
+	<div class="div_hr">
+		<hr class="hr_class_1">
+		<div class="sr-root">
+      <div class="sr-main">
+        <form id="payment-form" class="sr-payment-form">
+          <div class="sr-combo-inputs-row">
+            <div class="sr-input sr-card-element" id="card-element"></div>
+          </div>
+          <div class="sr-field-error" id="card-errors" role="alert"></div>
+          <button id="submit">
+            <div class="spinner hidden" id="spinner"></div>
+            <span id="button-text">Pay</span><span id="order-amount"></span>
+          </button>
+        </form>
+        <div class="sr-result hidden">
+          <p>Payment completed<br /></p>
+          <pre>
+            <code></code>
+          </pre>
+        </div>
+      </div>
+    </div>
+
+	</div>
+	<!-- <div class="content_2">
+			<span class="span_title">Your details</span>
+			<br>
+			<br>
+			<span>Title: *</span>
+			<br>
+			<br>
+			<select class="select_1">
+				<option value="">---Select A Title ---</option>
+				<option value="Mr">Mr</option>
+				<option value="Miss">Miss</option>
+				<option value="Mrs">Mrs</option>
+				<option value="Master">Master</option>
+				<option value="Dr">Dr</option>
+				<option value="Ms">Ms</option>
+				<option value="Sir">Sir</option>
+				<option value="Lady">Lady</option>
+				<option value="Rev">Rev</option>
+				<option value="Fr">Fr</option>
+			</select>
+			<br>
+			<br>
+			<div class="name">
+					<div class="name_left">
+						<span>First Name: *</span>
+						<br>
+						<br>
+						<input class="name_input_left" type="" name="">
+					</div>
+					
+
+					<div class="name_right">
+						<span>Surname: *</span>
+						<br>
+						<br>
+						<input  class="name_input_right" type="" name="">
+					</div>
+			</div>
+
+			
+
+			<div class="kong"></div>
+			<div class="name_2">
+					<div class="name_left_2">
+						<span>Postcode: *</span>
+						<br>
+						<br>
+						<input class="name_input_left_2" type="" name="">
+					</div>
+					
+
+				
+			</div>
+
+
+
+
+			<div class="kong"></div>
+			<div class="name_1">
+					<div class="name_left_1">
+						<span>Address 1: *</span>
+						<br>
+						<br>
+						<input class="name_input_left_1" type="" name="">
+					</div>
+					
+
+					<div class="name_right_1">
+						<span>Address 2:</span>
+						<br>
+						<br>
+						<input  class="name_input_right_1" type="" name="">
+					</div>
+			</div>
+
+
+
+			<div class="kong"></div>
+			<div class="name_3">
+					<div class="name_left_3">
+						<span>City/Town: *</span>
+						<br>
+						<br>
+						<input class="name_input_left_3" type="" name="">
+					</div>
+					
+
+					<div class="name_right_3">
+						<span>County:</span>
+						<br>
+						<br>
+						<input  class="name_input_right_3" type="" name="">
+					</div>
+			</div>
+
+
+
+			<div class="kong"></div>
+			<div class="name_4">
+					<div class="name_left_4">
+						<span>City/Town: *</span>
+						<br>
+						<br>
+						<select class="select_4"><option selected="" value="GB">United Kingdom</option></select>
+					</div>
+					
+
+			</div>
+
+
+			<div class="kong"></div>
+			<div class="name_5">
+					<div class="name_left_5">
+						<span>Email: *</span>
+						<br>
+						<br>
+						<input class="name_input_left_5" type="" name="">
+					</div>
+					
+
+					<div class="name_right_5">
+						<span>Verify Email: *</span>
+						<br>
+						<br>
+						<input  class="name_input_right_5" type="" name="">
+					</div>
+			</div>
+
+
+			<div class="kong"></div>
+			<div class="name_6">
+					<div class="name_left_6">
+						<span>Contact Number/Mobile: *</span>
+						<br>
+						<br>
+						<input class="name_input_left_6" type="" name="">
+					</div>
+					
+
+					
+			</div>
+
+
+			<div class="kong"></div>
+			<div class="name_7">
+					<div class="name_left_7">
+						<div class="check_left_1"></div>
+					    <div class="check_right_1">Are you under 18?</div>
+
+</span>
+						<br>
+						<br>
+			
+					</div>	
+			</div>
+
+
+			<div class="kong"></div>
+			<div class="name_8">
+					<div class="name_left_8">
+						<span>Date of Birth:</span>
+						<br>
+						<br>
+						<input type="Date" class="name_input_left_8" type="" name="">
+					</div>
+					
+
+					
+			</div>
+
+
+			<div class="kong"></div>
+			<div class="name_9">
+					<div class="name_left_9">
+						<span>Please tell us why you are donating:</span>
+						<br>
+						<br>
+						<input type="" class="name_input_left_9" type="" name="">
+					</div>
+					
+
+					
+			</div>
+
+
+			<div class="kong"></div>
+			<div class="name_10">
+					<div class="name_left_10">
+						<span>Want to leave a message about your donation? Please type it below:</span>
+						<br>
+						<br>
+							<textarea class="name_textarea_left_10"></textarea>
+					</div>
+					
+
+					
+			</div>
+
+
+
+			<div class="kong"></div>
+			<div class="name_11">
+					<div class="name_left_11">
+						<div class="check_left_11"></div>
+					    <div class="check_right_11">Please treat my donations as Gift Aid donations.</div>
+						<br>
+						<br>
+					    <p class="p_11">
+					    	I want to gift aid my donation and any donations I make in the future or have made in the past 4 years to St Oswald’s Hospice. Gift Aid is reclaimed by the charity from the tax you pay for the current tax year. Your address is needed to identify you as a current UK taxpayer. I am a UK taxpayer and understand that if I pay less Income Tax and/or Capital Gains Tax than the amount of Gift Aid claimed on all my donations in that tax year it is my responsibility to pay any difference. Please notify St Oswald’s Hospice if you want to cancel this declaration, change your name or home address or no longer pay sufficient tax on your income and/or capital gains.
+					    </p>
+
+
+			
+					</div>	
+			</div>
+
+
+			<div class="kong"></div>
+			<div class="name_12">
+					<div class="name_left_12">
+					
+					    <span class="span_12">Why did you choose to give a one-off gift?</span>
+						<br>
+						<br>
+
+						<div class="check_left_11"></div>
+					    <div class="check_right_11">A friend or family member was cared for by St Oswald's</div>
+
+						<br>
+						<br>
+					    <div class="check_left_11" style="clear: both"></div>
+					    <div class="check_right_11">I support Hospice or Palliative Care charities</div>
+							
+						<br>
+						<br>
+					    <div class="check_left_11" style="clear: both"></div>
+					    <div class="check_right_11">I support cancer charities</div>
+
+						<br>
+						<br>
+					    <div class="check_left_11" style="clear: both"></div>
+					    <div class="check_right_11">I support local charities</div>
+							
+
+				        <br>
+						<br>
+					    <div class="check_left_11" style="clear: both"></div>
+					    <div class="check_right_11">I believe in the life-changing work St Oswald's carries out in the community</div>
+
+					    <br>
+						<br>
+					    <div class="check_left_11" style="clear: both"></div>
+					    <div class="check_right_11">I wanted to do a specific event or campaign</div>
+
+					    <br>
+						<br>
+					    <div class="check_left_11" style="clear: both"></div>
+					    <div class="check_right_11">We would like to keep in contact with you about upcoming news, events and fundraising activities using the contact details you have supplied. We will not pass on your information to any other party. To receive this information please tick this box.</div>
+					    <br>
+					    <br>
+					    <br>
+					    <p class="p_12">
+						If you would like to join our mailing list to receive hospice news, stories and information about upcoming events, please let us know your preferred contact method(s):
+					    </p>
+						
+						<br>
+						
+					    <div class="check_left_11" style="clear: both"></div>
+					    <div class="check_right_11">I wanted to do a specific event or campaign</div>
+
+					     <br>
+						<br>
+					    <div class="check_left_11" style="clear: both"></div>
+					    <div class="check_right_11">I wanted to do a specific event or campaign</div>
+
+					     <br>
+						<br>
+					    <div class="check_left_11" style="clear: both"></div>
+					    <div class="check_right_11">All</div>
+
+					     <br>
+						<br>
+					    <div class="check_left_11" style="clear: both"></div>
+					    <div class="check_right_11">Post</div>
+
+					     <br>
+						<br>
+					    <div class="check_left_11" style="clear: both"></div>
+					    <div class="check_right_11">Email</div>
+
+					    <br>
+						<br>
+					    <div class="check_left_11" style="clear: both"></div>
+					    <div class="check_right_11">SMS</div>
+
+	</div>
+
+ -->
+
+	<div style="height:100px;clear: both"></div>
+</body>
+</html>

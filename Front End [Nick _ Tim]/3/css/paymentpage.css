@@ -1,0 +1,614 @@
+*{
+	font-size: 14px;
+}
+input,textarea{
+
+　　border:0;/*方法一*/
+
+　　-webkit-apprarance:none;/*方法二*/
+
+}
+.h2_one_class{
+
+	color: #A61F92;
+}
+.content_1{
+
+	width:85%;
+	margin: 0 auto;
+	height: 250px;
+	text-align: center;
+}
+.square_1{
+	height: 198px;
+	width:20%;
+	border:1px solid #12ABBF;
+	float: left;
+	margin-left: 4.5%;
+	cursor:pointer;
+	border-radius: 20px;
+}
+
+.price{
+
+	font-weight: 520;
+	font-size: 40px;
+	color: #12ABBF;
+}
+.hr_class{
+	width:80%;
+	border:1px solid #fff;
+}
+.desc{
+	color: #12ABBF;
+	width:85%;
+	margin-left:20px;
+}
+#custom__amount{
+	height: 30px;
+	width:60%;	
+	position: relative;
+	bottom: 10px;
+	border:1px solid #F4F4F4;
+}
+.height_1{
+	height: 10px;
+}
+.button_class{
+	border-radius: 15px;
+	width: 23%;
+	height:50px;
+	padding: 10px;
+	font-size: 15px;
+	background: #FA5670;
+	color: #fff;
+	font-weight: bold;
+}
+.div_hr{
+	width: 80%;
+	text-align: center;
+	margin:0 auto;
+}
+.hr_class_1{
+	width:100%;
+	margin-left:1%;
+	margin-top:4%;
+	color: #FA2D56;
+}
+.content_2{
+	width: 80%;
+	margin:0 auto;
+	padding-left: 1%;
+}
+.span_title{
+	color: #262626;
+}
+.select_1{
+	height:40px;
+	width: 45%;
+	font-size: 15px;
+	border-radius:7px;
+}
+.name_left{
+	float: left;
+	width: 45%;
+	height:40px;
+
+}
+.name_right{
+	float: right;
+	width: 45%;
+}
+.name_input_left{
+	width: 100%;
+	height:40px;
+	border-radius:7px;
+}
+.name_input_right{
+	width: 100%;
+	height:40px;
+	border-radius:7px;
+}
+
+
+.kong{
+	height:25px;
+	clear: both;
+}
+.name_1{
+	clear: both;
+
+}
+
+.name_left_1{
+	width: 45%;
+	float: left;
+}
+.name_right_1{
+
+	width: 45%;
+	float: right;
+}
+.name_input_left_1{
+	height:40px;
+	width: 100%;
+	border-radius:7px;
+}
+.name_input_right_1{
+	height:40px;
+	width: 100%;
+	border-radius:7px;
+}
+
+
+.name_2{
+	clear: both;
+
+}
+
+.name_left_2{
+	width: 45%;
+	float: left;
+}
+
+.name_input_left_2{
+	height:40px;
+	width: 100%;
+	border-radius:7px;
+}
+
+
+.name_3{
+	clear: both;
+
+}
+
+.name_left_3{
+	width: 45%;
+	float: left;
+}
+.name_right_3{
+
+	width: 45%;
+	float: right;
+}
+.name_input_left_3{
+	height:40px;
+	width: 100%;
+	border-radius:7px;
+}
+.name_input_right_3{
+	height:40px;
+	width: 100%;
+	border-radius:7px;
+}
+
+
+.name_4{
+	clear: both;
+}
+.name_left_4{
+	width: 45%;
+}
+.select_4{
+	width: 100%;
+	height:40px;
+	border-radius: 7px;
+}
+
+
+.name_5{
+	clear: both;
+
+}
+
+.name_left_5{
+	width: 45%;
+	float: left;
+}
+.name_right_5{
+
+	width: 45%;
+	float: right;
+}
+.name_input_left_5{
+	height:40px;
+	width: 100%;
+	border-radius:7px;
+}
+.name_input_right_5{
+	height:40px;
+	width: 100%;
+	border-radius:7px;
+}
+
+.name_6{
+	clear: both;
+}
+.name_left_6{
+	width: 100%;
+}
+.name_input_left_6{
+	height:40px;
+	width: 100%;
+	border-radius: 7px;
+}
+
+.check_left_1{
+	width: 25px;
+	height:25px;
+	border-radius: 50%;
+	background: #FA5670;
+	float: left;
+}
+.check_right_1{
+	width: 15%;
+	float: left;
+	margin-left: 10px;
+}
+
+
+.name_8{
+	clear: both;
+}
+.name_left_8{
+	width: 100%;
+
+}
+.name_input_left_8{
+	height:40px;
+	width: 45%;
+	border-radius: 7px;
+}
+
+
+
+.name_9{
+	clear: both;
+}
+.name_left_9{
+	width: 100%;
+
+}
+.name_input_left_9{
+	height:40px;
+	width: 100%;
+	border-radius: 7px;
+}
+
+.name_10{
+	clear: both;
+}
+.name_left_10{
+	width: 100%;
+}
+.name_textarea_left_10{
+	height:150px;
+	width: 100%;
+	border-radius: 7px;
+
+}
+
+
+.check_left_11{
+	width: 25px;
+	height:25px;
+	border-radius: 50%;
+	background: #F2F2F2;
+	float: left;
+}
+.check_right_11{
+	width: 65%;
+	float: left;
+	margin-left: 10px;
+}
+.p_11{
+	margin-left: 20px;
+	font-size: 13px;
+}
+
+
+.name_12{
+	clear: both;
+
+}
+.span_12{
+	clear: both;
+}
+.p_12{
+	margin-left: 25px;
+	color: #C1C1C1;
+	font-size: 14px;
+}
+
+.bottom_title{
+	clear: both;
+	font-size:13px;
+	margin-top:45px;
+	color: #8B4E8F;
+}
+.button_right{
+	float: right;
+	height:50px;
+	width: 85px;
+	background: #8B4E8F;
+	text-align:center;
+	line-height: 43px;
+	font-weight:bold;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+body{
+  height: 1000px;
+
+}
+/*============================================================================*/
+/*=============================Banner section=================================*/
+/*============================================================================*/
+header{
+  background-color: rgb(0, 106, 80); //changable main colour
+  height: 20px;
+  width: 100%;
+  padding-bottom: 30px;
+  background-size: height 50px;
+  background-position: center;
+}
+
+/*==========================Navigation Bar Section============================*/
+ul{
+  float: left;
+  padding-left: 160px;
+  list-style-type: none;
+}
+
+/*====================Navigation Bar Individual Button========================*/
+ul li{
+  display: inline-block;
+  padding-right: 2px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  transition: 0.6s ease;
+}
+
+
+/*======================Navigation Bar Hovering Status========================*/
+ul li a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+ul li.active a {
+  background-color: #fff;
+  color: #000;
+}
+
+
+.search-box{
+  position: absolute;
+  background: none;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  border: none;
+  padding-left: 250px;
+}
+
+/*========================Hover to Expand Function============================*/
+.search-box:hover > .search-txt{
+  width: 240px;
+  padding: 0 6px;
+
+}
+.search-btn{
+   color: white;
+   float: right;
+   width: 10px;
+   height: 10px;
+   border: none;
+   background: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/*==========================Search Bar Text Area==============================*/
+.search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 20px;
+  width: 0px; //width is 0, will expand on hover
+}
+
+/*============================================================================*/
+/*============================Gallery Slideshow===============================*/
+/*============================================================================*/
+
+/*======================Gallery Section container=============================*/
+/*
+.gallery_box{
+  width: 100%;
+  height: 500px;
+  padding: none;
+  box-shadow: 0px 0px 3px 1px #1f1f1f;
+  box-sizing: border-box;
+}
+*/
+/*========================Gallery Image container=============================*/
+/* .gallery_box .slide_container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #1f1f1f;
+  position: relative;
+}
+*/
+/*================================Image Container=============================*/
+/* .gallery_box .slide_container .image_holder{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: none;
+  position: absolute;
+}
+
+.gallery_box .slide_container .image_holder .img{
+  width: 100%;
+  height: 100%;
+}
+*/
+
+.Navigation{
+  position: absolute;
+  bottom: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar{
+  position: center;
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.gallery_box{
+  width: 500%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+}
+
+.slide_container{
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  transition: 0.6s;
+}
+
+.image_holder{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+  position: center;
+}
+
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: -40%;
+}
+
+
+
+.abt_white_space{
+  height: 25px;
+  width: 100%;
+  background-color: #1f1f1f;
+}
+
+.about_US_Container{
+  height: 140px;
+  width: 50%;
+  position: absolute;
+  background-color: #1f1f1f
+  margin: auto;
+  top: 54.5%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hex1{
+  width: 250px;
+  height: 350px;
+  background-color: #1f1f1f;
+  transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  margin: 200px auto;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.hex1Inside{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.hex1Image{
+  width: 100%;
+  height: 100%;
+  background-image: url(https://www.stcuthbertshospice.com/userfiles/images/IMG_5291.JPG);
+  background-position: center;
+  background-size: 183% 100%;
+  transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+  visibility: visible;
+}
+
+
+
